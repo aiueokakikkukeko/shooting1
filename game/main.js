@@ -46,7 +46,7 @@ window.addEventListener("keydown",(e)=>{
 });
 
 function update(){
-    for (let i =  0; i <bullets.length; i++) {
+    for (let i =  0; i < bullets.length; i++) {
         const bullet = bullets[i];
         bullet.y += bullet.vy;
         if(bullet.y < 0) {
@@ -70,7 +70,7 @@ function draw(){
 
 function gameLoop() {
     update();
-    drow();
+    draw();
     requestAnimationFrame(gameLoop);
 }
 
